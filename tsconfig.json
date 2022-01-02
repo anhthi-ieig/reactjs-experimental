@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "public",
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "paths": {
+      "*": ["./src/*"]
+    }
+  },
+  "include": ["config/**/*", "src/**/*", "typings/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

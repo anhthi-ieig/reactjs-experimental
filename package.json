@@ -1,0 +1,87 @@
+{
+  "name": "reactjs-experimental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "start": "webpack serve --config config/webpack.dev.js --progress",
+    "build": "webpack --config config/webpack.prod.js",
+    "format": "prettier src/**/*.{ts,tsx} --write && stylelint src/**/*.scss",
+    "lint": "eslint --ext .ts,.tsx,.js --fix .",
+    "clear": "npm run format && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhthi-ieig/reactjs-experimental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhthi-ieig/reactjs-experimental/issues"
+  },
+  "homepage": "https://github.com/anhthi-ieig/reactjs-experimental#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/lodash": "^4.14.171",
+    "@types/mini-css-extract-plugin": "^2.0.1",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "bundle-stats-webpack-plugin": "^3.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^8.0.1",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "mini-css-extract-plugin": "^2.1.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^8.2.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-resources-loader": "^1.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.19.0",
+    "stylelint-webpack-plugin": "^2.2.2",
+    "terser-webpack-plugin": "^5.1.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write --ignore-unknown",
+      "eslint --fix"
+    ],
+    "*.scss": "stylelint --fix --syntax=scss"
+  }
+}
