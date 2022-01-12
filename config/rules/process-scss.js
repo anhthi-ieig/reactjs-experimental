@@ -24,7 +24,7 @@ module.exports = () => ({
     {
       loader: 'style-resources-loader',
       options: {
-        patterns: [path.resolve(rootDir, 'src/styles/variables.scss')],
+        patterns: [path.resolve(rootDir, 'src/styles/_variables.scss')],
       },
     },
   ],

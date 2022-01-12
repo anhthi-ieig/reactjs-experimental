@@ -1,12 +1,12 @@
-import React, { ReactElement, lazy, Suspense } from 'react';
+import React from 'react';
 import './styles/base.scss';
 
-const Home = lazy(() => import('./pages/Home'));
+import Rerender from './pages/rerender';
 
-const App = (): ReactElement => (
-  <Suspense fallback="Loading...">
-    <Home />
-  </Suspense>
+const App: React.FC = () => (
+  <>
+    <Rerender />
+  </>
 );
 
 export default App;
